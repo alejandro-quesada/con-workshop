@@ -9,7 +9,7 @@ resources:
 - name: source-code
   type: git
   source:
-    uri: https://github.com/MarcialRosales/app1
+    uri: https://github.com/alejandro-quesada/con-workshop
     branch: master
 - name: artifact-repo
   type: maven-resource

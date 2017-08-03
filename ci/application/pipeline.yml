@@ -23,7 +23,7 @@ resources:
 jobs:
 - name: build-and-verify
   plan:
-  - get: source-code
+  - get: source-code-repo
     trigger: true
   - task: build-and-verify
     file: tasks/build.yml

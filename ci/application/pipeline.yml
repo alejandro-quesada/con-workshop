@@ -6,11 +6,6 @@ resource_types:
     tag: latest
 
 resources:
-- name: source-code
-  type: git
-  source:
-    uri: https://github.com/alejandro-quesada/con-workshop
-    branch: master
 - name: artifact-repo
   type: maven-resource
   source:
@@ -18,6 +13,12 @@ resources:
     artifact: com.example:demo:jar
     username: admin
     password: admin123
+- name: source-code-repo
+  type: git
+  source:
+    uri: https://github.com/alejandro-quesada/con-workshop.git
+    branch: master
+
 
 jobs:
 - name: build-and-verify

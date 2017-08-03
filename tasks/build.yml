@@ -14,4 +14,3 @@ run:
     - -c
     - |
       echo "Copying artifacts ..."
-      cp -r target/*.jar ../build-artifact
